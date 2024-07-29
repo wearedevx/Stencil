@@ -3,10 +3,13 @@
 // Copyright © 2022 Stencil
 // MIT Licence
 //
+import Combine
 
 /// A container for template variables.
 open class Context {
     var dictionaries: [[String: Any?]]
+
+    public var publisher: PassthroughSubject<String, Never> = .init()
 
     /// The context's environment, such as registered extensions, classes, …
     public let environment: Environment
