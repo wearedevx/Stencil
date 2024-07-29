@@ -11,7 +11,7 @@ open class Context {
     /// The context's environment, such as registered extensions, classes, …
     public let environment: Environment
 
-    init(dictionaries: [[String: Any?]], environment: Environment) {
+    public init(dictionaries: [[String: Any?]], environment: Environment) {
         self.dictionaries = dictionaries
         self.environment = environment
     }
